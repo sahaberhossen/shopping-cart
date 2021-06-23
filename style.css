@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section{
+    background-color: #f6f5fa;
+    padding: 20px 0;
+}
+img {
+    max-width: 100%;
+}
+.iphone__img img{
+    width: 80%;
+}
+.iphone__heading ,.margin{
+    margin-top: 50px;
+}
+.iphone__content {
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+input[type="number"] {
+    width: 40px;
+    border: none;
+    background: #F6F5FA;
+    padding: 5px 4px;
+    border-radius: 5px;
+}
+.iphone__fontawesome__plus{
+    padding: 10px;
+}
+button {
+    border: none;
+    background: none;
+}

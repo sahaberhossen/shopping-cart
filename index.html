@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+ 
+    <link rel="stylesheet" href="style.css">
+    <title>shopping-cart</title>
+</head>
+<body>
+    
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center text-capitalize">my shopping cart</h2>
+            <div class="iphone__content row">
+                <div class="col-7 row">
+                    <div class="iphone__img col-4"><img src="./images/product-1.png" alt="phone "></div>
+                    <div class="iphone__text col-8"><h3 class="iphone__heading">i phone 11 128GB black</h3></div>
+                </div>
+                <div class="col-5 row margin">
+                    <div class="col-6">
+                        <button onclick="decreasePhoneCount()" class="minus__degrement"><i  class="fas fa-minus "></i></button>
+                        <input onclick="updatePhonePrice()" id ="phone-count" type="number" value="1">
+                        <button onclick="increasePhoneCount()" class="plus__increment" id="button"><i  class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="col-6 row">
+                       <div class="col-6"> <h5>$ <span id="totalPhonePrice">1278</span></h5></div>
+                       <div class="col-6"><img src="images/remove.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="iphone__content row">
+                <div class="col-7 row">
+                    <div class="iphone__img col-4"><img src="./images/product-2.png" alt="phone "></div>
+                    <div class="iphone__text col-8"><h3 class="iphone__heading">i phone 11 Silicone case black</h3></div>
+                </div>
+                <div class="col-5 row margin">
+                    <div class="col-6">
+                            <button onclick="decreaseCasingCount()"><i id="iphone__fontawesome__minus" class="fas fa-minus"></i></button>
+                            <input type="number" onclick="increasevalueUpdate()" id="cassing" value="1">
+                            <button onclick="increaseCasingCount()" id="button"><i id="iphone__fontawesome__plus" class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="col-6 row">
+                       <div class="col-6"> <h5>$ <span id="totalCassingPrice">59</span></h5></div>
+                       <div class="col-6"><img src="images/remove.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+
+        
+
+    
+
+   
+        <div class="cart-item ">
+            <div class="row iphone__content pt-3 pb-3">
+
+               <div class="col-md-8">
+                  <h5>Subtotal: </h5>
+                  <h5>Tax:</h5>
+                  <h5>Total:</h5>
+               </div>
+
+               <div class="col-md-4 status text-right">
+                  <p >$ <span id="total-price">1,278</span></p>
+                  <p >$ <span id="tax-amount">0</span> </p>
+                  <p >$ <span id="grand-total">1,278</span></p>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-12 pt-4 pb-4 text-right">
+            <button type="button" class="btn btn-success check-out">Check Out</button>
+         </div>
+   
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
